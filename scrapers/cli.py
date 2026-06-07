@@ -11,6 +11,7 @@ from .scrape_cmd import (
     build_scrape_payload,
     payload_to_json,
 )
+from .grab_cmd import build_grab_payload, write_grab_payload
 
 ARCHITECTURES = (
     "AArch64",
@@ -68,6 +69,10 @@ def _default_cpp_output(arch: str) -> str:
     return str(_repo_root() / "output" / arch / "cpp_inventory.json")
 
 
+def _default_grab_output(arch: str) -> str:
+    return f"{arch}.json"
+
+
 def _resolve_output_path(path: str) -> Path:
     raw = Path(path)
     resolved = (_repo_root() / raw).resolve() if not raw.is_absolute() else raw.resolve()
@@ -91,6 +96,12 @@ def _arch_arg(value: str) -> str:
     raise argparse.ArgumentTypeError(
         f"invalid architecture: {value!r}; use `arch list` to see valid names, or ALL"
     )
+
+
+def _grab_arch_arg(value: str) -> str:
+    if value in ARCH_SET:
+        return value
+    raise argparse.ArgumentTypeError(f"invalid architecture: {value!r}; use `arch list` to see valid names")
 
 
 def _run_subprocess(cmd):
@@ -480,6 +491,67 @@ def cmd_scrape(args):
     return 1 if failures else 0
 
 
+def cmd_grab(args):
+    root = _llvm_root(args)
+    if not root.is_dir():
+        print(f"llvm root not found: {root}", file=sys.stderr)
+        return 2
+
+    available_arches = _scan_arch_dirs(root)
+    if args.all:
+        if args.output:
+            out_root = _resolve_output_path(args.output)
+            if out_root.suffix:
+                print("--output with --all must be a directory path", file=sys.stderr)
+                return 2
+        else:
+            out_root = _repo_root()
+        if not available_arches:
+            print(f"no canonical architecture directories found under: {root}", file=sys.stderr)
+            return 2
+        failures = 0
+        written = []
+        for arch in available_arches:
+            out_path = out_root / _default_grab_output(arch)
+            try:
+                payload = build_grab_payload(root, arch)
+                write_grab_payload(out_path, payload)
+                written.append(str(out_path))
+            except Exception as exc:
+                failures += 1
+                print(f"{arch}: {exc}", file=sys.stderr)
+        print(
+            json.dumps(
+                {
+                    "command": "grab",
+                    "mode": "all",
+                    "llvm_root": str(root),
+                    "written_files": written,
+                    "failed_architectures": failures,
+                },
+                indent=2,
+                sort_keys=True,
+            )
+        )
+        return 1 if failures else 0
+
+    if args.arch not in available_arches:
+        print(
+            f"architecture directory not found under llvm root: {args.arch} (llvm-root: {root})",
+            file=sys.stderr,
+        )
+        return 2
+    try:
+        output = _resolve_output_path(args.output or _default_grab_output(args.arch))
+        payload = build_grab_payload(root, args.arch)
+        write_grab_payload(output, payload)
+    except Exception as exc:
+        print(str(exc), file=sys.stderr)
+        return 2
+    print(f"wrote {output}")
+    return 0
+
+
 def build_parser():
     parser = argparse.ArgumentParser(
         prog="scrapers",
@@ -605,6 +677,43 @@ def build_parser():
             help=description,
         )
     scrape.set_defaults(func=cmd_scrape)
+
+    grab = sub.add_parser(
+        "grab",
+        help="Coalesce architecture-level TableGen instruction export.",
+        description=(
+            "Coalesce one architecture-level export from LLVM TableGen sources. "
+            "Uses Tree-Sitter TableGen parsing; emits top-level sections: header, uArch, os_interop, instructions."
+        ),
+        epilog=(
+            "Examples:\n"
+            "  python3 -m TD-Scrape grab --arch X86\n"
+            "  python3 -m TD-Scrape grab --arch RISCV --output riscv.json\n"
+            "  python3 -m TD-Scrape grab --all\n"
+            "  python3 -m TD-Scrape grab --all --output output/grab"
+        ),
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    grab_group = grab.add_mutually_exclusive_group(required=True)
+    grab_group.add_argument(
+        "--arch",
+        type=_grab_arch_arg,
+        metavar="ARCH",
+        help="Architecture directory name under llvm-root.",
+    )
+    grab_group.add_argument(
+        "--all",
+        action="store_true",
+        help="Run grab for all canonical architectures found in llvm-root.",
+    )
+    grab.add_argument(
+        "--output",
+        help=(
+            "Output path. With --arch, defaults to <arch>.json. "
+            "With --all, this is an output directory and files are <output>/<arch>.json."
+        ),
+    )
+    grab.set_defaults(func=cmd_grab)
 
     return parser
 

@@ -1,0 +1,2 @@
+"""TD scraper CLI package."""
+

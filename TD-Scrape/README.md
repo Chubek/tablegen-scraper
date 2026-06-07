@@ -56,3 +56,11 @@ Example run:
 - `python TD-Scrape/RISCV/scrape_td.py --llvm-root LLVM-Targets --arch RISCV --output TD-Scrape/RISCV/td_inventory.json`
 - `python TD-Scrape/X86/scrape_td.py --llvm-root LLVM-Targets --arch X86 --output TD-Scrape/X86/td_inventory.json`
 - `python TD-Scrape/AArch64/scrape_cpp.py --llvm-root LLVM-Targets --arch AArch64 --output TD-Scrape/AArch64/cpp_inventory.json`
+
+Shell wrapper (repo root):
+- `./scrape.sh` is the user-facing wrapper for `python3 -m TD-Scrape ...`
+- `./helper.sh` contains small support utilities used by `scrape.sh`
+- Examples:
+  - `./scrape.sh scrape --instructions --opcodes`
+  - `./scrape.sh scrape --mnemonics`
+  - `./scrape.sh scrape --all`

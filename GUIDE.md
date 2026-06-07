@@ -311,7 +311,7 @@ Default behavior:
 
 - parses `LLVM-Targets/<arch>/**/*.td` with Tree-Sitter TableGen;
 - requires at least one category flag, unless `--all` is used;
-- emits deterministic JSON keyed by selected category;
+- emits deterministic JSON keyed by selected category (stdout mode when no `--output`);
 - each category returns:
   - `implemented` (bool),
   - `mode` (`structural` or `heuristic`),
@@ -325,6 +325,39 @@ Default behavior:
 - expands to every supported scrape category;
 - composes with `--arch` (including `--arch ALL`);
 - equivalent to passing all category flags explicitly.
+
+##### `--output`, `-o`
+
+- output root directory for file mode;
+- writes under `<output>/<ARCH>/...`;
+- in file mode, category outputs are split into one file per category by default:
+  - `<output>/<ARCH>/instructions.json`
+  - `<output>/<ARCH>/opcodes.json`
+  - etc.
+- when omitted, `scrape` prints a full JSON payload to stdout.
+
+##### `--merge [FILE]`
+
+- merge all selected categories into one file;
+- requires `--output`;
+- default file name: `Collection.json`;
+- custom name supported: `--merge baz.json` -> `<output>/<ARCH>/baz.json`;
+- mutually exclusive with `--combine`.
+
+##### `--combine CAT1,CAT2,...`
+
+- combine only selected subset categories into one file;
+- requires `--output`;
+- combined categories must also be selected by flags or `--all`;
+- combined categories must be semantically combinable (heuristic categories);
+- non-combined selected categories are still emitted as separate files;
+- mutually exclusive with `--merge`.
+
+##### `--combine-file FILE`
+
+- custom file name for `--combine` output;
+- requires `--combine`;
+- default name when omitted: title-cased joined category name, e.g. `Instructions-Opcodes.json`.
 
 ##### `--instructions`
 
@@ -488,6 +521,12 @@ Default behavior:
 - no category flags and no `--all` -> command exits with error;
 - unknown architecture in `--arch` -> argument validation error;
 - missing architecture directory -> error recorded for that architecture result.
+- `--merge` requires `--output`;
+- `--combine` requires `--output`;
+- `--combine-file` requires `--combine`;
+- `--merge` and `--combine` cannot be used together;
+- `--combine` rejects unknown categories;
+- `--combine` rejects structural-only categories.
 
 #### Output shape (scrape command)
 
@@ -509,6 +548,32 @@ Default behavior:
     }
   }
 }
+```
+
+#### Output shape (scrape with `--output`)
+
+When `--output` is used, stdout reports written files:
+
+```json
+{
+  "command": "scrape",
+  "failed_architectures": 0,
+  "written_files": [
+    "/tmp/out/X86/instructions.json",
+    "/tmp/out/X86/opcodes.json"
+  ]
+}
+```
+
+Examples:
+
+```bash
+python3 -m TD-Scrape scrape --arch X86 --instructions --opcodes --output /tmp/out
+python3 -m TD-Scrape scrape --arch X86 --all --output /tmp/out
+python3 -m TD-Scrape scrape --arch X86 --instructions --opcodes --output /tmp/out --merge
+python3 -m TD-Scrape scrape --arch X86 --instructions --opcodes --output /tmp/out --merge baz.json
+python3 -m TD-Scrape scrape --arch X86 --instructions --opcodes --mnemonics --output /tmp/out --combine instructions,opcodes
+python3 -m TD-Scrape scrape --arch X86 --instructions --opcodes --output /tmp/out --combine instructions,opcodes --combine-file Pair.json
 ```
 
 ---

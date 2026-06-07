@@ -1,0 +1,714 @@
+{
+  "architecture": "AArch64",
+  "files": [
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64A53Fix835769.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64A57FPLoadBalancing.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64AdvSIMDScalarPass.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64Arm64ECCallLowering.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64AsmPrinter.cpp",
+      "init_functions": [
+        {
+          "line": 4023,
+          "name": "LLVMInitializeAArch64AsmPrinter"
+        }
+      ],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64BranchTargets.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64CallingConvention.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64CleanupLocalDynamicTLSPass.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64CollectLOH.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64CompressJumpTables.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64CondBrTuning.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64ConditionOptimizer.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64ConditionalCompares.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64DeadRegisterDefinitionsPass.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64ExpandImm.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64ExpandPseudoInsts.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64FalkorHWPFFix.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64FastISel.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64FrameLowering.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64ISelDAGToDAG.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64ISelLowering.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64InstrInfo.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64LoadStoreOptimizer.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64LowerHomogeneousPrologEpilog.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64MCInstLower.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64MIPeepholeOpt.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64MachineFunctionInfo.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64MachineScheduler.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64MacroFusion.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64PBQPRegAlloc.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64PointerAuth.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64PostCoalescerPass.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64PrologueEpilogue.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64PromoteConstant.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64RedundantCondBranchPass.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64RedundantCopyElimination.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64RegisterInfo.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64SIMDInstrOpt.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64SLSHardening.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64SMEAttributes.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64SRLTDefineSuperRegs.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64SelectionDAGInfo.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64SpeculationHardening.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64StackTagging.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64StackTaggingPreRA.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64StorePairSuppress.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64Subtarget.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64TargetMachine.cpp",
+      "init_functions": [
+        {
+          "line": 236,
+          "name": "LLVMInitializeAArch64Target"
+        }
+      ],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64TargetObjectFile.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AArch64TargetTransformInfo.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/AsmParser/AArch64AsmParser.cpp",
+      "init_functions": [
+        {
+          "line": 8603,
+          "name": "LLVMInitializeAArch64AsmParser"
+        }
+      ],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/Disassembler/AArch64Disassembler.cpp",
+      "init_functions": [
+        {
+          "line": 1673,
+          "name": "LLVMInitializeAArch64Disassembler"
+        }
+      ],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/Disassembler/AArch64ExternalSymbolizer.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/GISel/AArch64CallLowering.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/GISel/AArch64GlobalISelUtils.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/GISel/AArch64InstructionSelector.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/GISel/AArch64LegalizerInfo.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/GISel/AArch64O0PreLegalizerCombiner.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/GISel/AArch64PostLegalizerCombiner.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/GISel/AArch64PostLegalizerLowering.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/GISel/AArch64PostSelectOptimize.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/GISel/AArch64PreLegalizerCombiner.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/GISel/AArch64RegisterBankInfo.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/MCTargetDesc/AArch64AsmBackend.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/MCTargetDesc/AArch64ELFObjectWriter.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/MCTargetDesc/AArch64ELFStreamer.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/MCTargetDesc/AArch64InstPrinter.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/MCTargetDesc/AArch64MCAsmInfo.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/MCTargetDesc/AArch64MCCodeEmitter.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/MCTargetDesc/AArch64MCExpr.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/MCTargetDesc/AArch64MCTargetDesc.cpp",
+      "init_functions": [
+        {
+          "line": 507,
+          "name": "LLVMInitializeAArch64TargetMC"
+        }
+      ],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/MCTargetDesc/AArch64MachObjectWriter.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/MCTargetDesc/AArch64TargetStreamer.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/MCTargetDesc/AArch64WinCOFFObjectWriter.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/MCTargetDesc/AArch64WinCOFFStreamer.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/MachineSMEABIPass.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/SMEABIPass.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/SMEPeepholeOpt.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/SVEIntrinsicOpts.cpp",
+      "init_functions": [],
+      "parse_error": true,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/TargetInfo/AArch64TargetInfo.cpp",
+      "init_functions": [
+        {
+          "line": 35,
+          "name": "LLVMInitializeAArch64TargetInfo"
+        }
+      ],
+      "parse_error": true,
+      "register_target_declarations": [
+        {
+          "line": 46,
+          "snippet": "RegisterTarget<Triple::aarch64, /*HasJIT=*/true> Z( getTheAArch64leTarget(), \"aarch64\", \"AArch64 (little endian)\", \"AArch64\");"
+        },
+        {
+          "line": 48,
+          "snippet": "RegisterTarget<Triple::aarch64_be, /*HasJIT=*/true> W( getTheAArch64beTarget(), \"aarch64_be\", \"AArch64 (big endian)\", \"AArch64\");"
+        },
+        {
+          "line": 50,
+          "snippet": "RegisterTarget<Triple::aarch64_32, /*HasJIT=*/true> X( getTheAArch64_32Target(), \"aarch64_32\", \"AArch64 (little endian ILP32)\", \"AArch64\");"
+        }
+      ],
+      "target_registry_calls": [
+        {
+          "line": 39,
+          "snippet": "TargetRegistry::RegisterTarget(getTheARM64Target(), \"arm64\", \"ARM64 (little endian)\", \"AArch64\", [](Triple::ArchType) { return false; }, true)"
+        },
+        {
+          "line": 42,
+          "snippet": "TargetRegistry::RegisterTarget(getTheARM64_32Target(), \"arm64_32\", \"ARM64 (little endian ILP32)\", \"AArch64\", [](Triple::ArchType) { return false; }, true)"
+        }
+      ]
+    },
+    {
+      "errors": [],
+      "file": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64/Utils/AArch64BaseInfo.cpp",
+      "init_functions": [],
+      "parse_error": false,
+      "register_target_declarations": [],
+      "target_registry_calls": []
+    }
+  ],
+  "source_root": "/home/chubakpdp11/lambda/tblgen/LLVM-Targets/AArch64",
+  "summary": {
+    "cpp_files": 81,
+    "files_with_io_or_parse_exception": 0,
+    "files_with_tree_sitter_parse_error_nodes": 53,
+    "total_init_functions": 6,
+    "total_register_target_declarations": 3,
+    "total_target_registry_calls": 2
+  }
+}
